@@ -13,6 +13,12 @@ the result through the real Eagler-fork TeaVM toolchain into a browser client
 > labelled pipeline demo** (not a fake full client). Every claimed feature is
 > gated on a passing real-browser test — see `docs/FEATURE_PARITY.md`.
 
+## Links
+- **Repository:** https://github.com/NT9712/eaglercraft-262-workspace
+- **Docs & live client:** https://deploy-docs-p3pl65k7r-nixeltide-8187s-projects.vercel.app
+  (open in a browser; the live client demo is under `/client/` — Note: Vercel
+   free-tier Deployment Protection may prompt for login on first visit.)
+
 ## Status (verified in real headless Chromium)
 - ✅ TeaVM JS client **boots** — zero console errors, canvas renders.
 - ✅ Migration matrix + TeaVM pipeline + Eagler runtime seam.
