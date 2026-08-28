@@ -1,0 +1,19 @@
+# =====================================================================
+# Eaglercraft 26.2 dependency catalog
+#
+# NOTE: The Eagler forked TeaVM plugins (JS 0.9.2, WASM-GC 0.12.1-EAGLER-R3)
+# are resolved from the eagler-teavm maven repo declared in settings.gradle.kts.
+# =====================================================================
+
+[libraries]
+hppc   = "com.carrotsearch:hppc:0.10.0"
+jsr305 = "com.google.code.findbugs:jsr305:3.0.2"
+lang3  = "org.apache.commons:commons-lang3:3.6"
+jorbis = "org.jcraft:jorbis:0.0.17"
+
+[bundles]
+common = [
+	"hppc",
+	"jsr305",
+	"lang3"
+]

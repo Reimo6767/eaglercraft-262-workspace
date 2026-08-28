@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eaglercraft 26.2 Workspace — Docs</title>
+<style>
+	body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 760px; margin: 0 auto;
+		padding: 2rem 1.5rem 4rem; line-height: 1.6; color: #1a1a1a; background: #fafafa; }
+	a { color: #0b62c4; text-decoration: none; } a:hover { text-decoration: underline; }
+	h1 { border-bottom: 2px solid #e0e0e0; padding-bottom: .4rem; }
+	.card { border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin: 1rem 0; background: #fff; }
+	.ok { color: #0a7a2f; font-weight: bold; }
+	.sum { color: #8a5a00; }
+	li { margin: .35rem 0; }
+</style>
+</head>
+<body>
+<h1>Eaglercraft 26.2 Workspace</h1>
+<p>Porting Minecraft Java Edition <strong>26.2</strong> to the browser via the
+Eagler runtime and <strong>TeaVM</strong>. JavaScript target; WASM-GC experimental.</p>
+
+<div class="card">
+	<span class="ok">✅ TeaVM JS client boots in real headless Chromium</span> — zero console errors.<br>
+	<span class="ok">✅ Rendering path</span> — rAF-driven canvas, non-blank frames.<br>
+	<span class="ok">✅ Migration matrix</span> · TeaVM pipeline · Eagler runtime seam.
+</div>
+
+<h2>Documents</h2>
+<ul>
+	<li><a href="ARCHITECTURE.md">Architecture</a></li>
+	<li><a href="MIGRATION_MATRIX.md">Migration matrix (26.2 API → Eagler browser path)</a></li>
+	<li><a href="FEATURE_PARITY.md">Feature parity gauntlet</a></li>
+	<li><a href="source-input.md">Legitimate source-input setup</a></li>
+	<li><a href="wasm-gc.md">WASM-GC status</a></li>
+</ul>
+
+<h2>Play the pipeline demo</h2>
+<p class="sum">The packaged JS client (dist/client) renders a labelled pipeline demo
+under a real TeaVM-exported entry point. Full 26.2 gameplay requires the legitimate
+decompiled source. Open <a href="/client/">/client/</a> to run the browser build.</p>
+
+<hr>
+<p><small>This repo does not and will not redistribute decompiled Minecraft source or assets.</small></p>
+</body>
+</html>

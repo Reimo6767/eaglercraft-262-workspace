@@ -1,0 +1,48 @@
+# Gradle
+.gradle
+build/
+target_*/build/
+target_*/javascript/classes.*
+target_*/javascript/js/
+target_teavm_wasm_gc/javascript_dist/
+
+# Node (browser smoke test deps)
+node_modules/
+package-lock.json
+package.json
+
+# Third-party native binaries for the desktop runtime are redistribution
+# artifacts, not project source; keep the repo lean. Licenses stay tracked.
+desktopRuntime/*.dll
+desktopRuntime/*.so
+desktopRuntime/*.so.1
+desktopRuntime/*.jar
+desktopRuntime/*.class
+desktopRuntime/resources/
+
+# Runtime state (never commit)
+desktopRuntime/_eagstorage*
+desktopRuntime/downloads/*
+desktopRuntime/screenshots/*
+desktopRuntime/crash-reports/*
+desktopRuntime/filesystem/*
+desktopRuntime/hs_err_*
+
+# Proprietary game source (NEVER commit)
+port-src/minecraft-26.2/
+reference/build-inputs/*.jar
+
+# Output dist is reproducible; ignore so it stays tracked-optional
+dist/
+
+# IDE
+.settings
+.classpath
+.project
+bin
+
+# Logs
+*.logdist/
+deploy-docs/
+node_modules/
+package*.json
