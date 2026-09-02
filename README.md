@@ -15,7 +15,7 @@ the result through the real Eagler-fork TeaVM toolchain into a browser client
 
 ## Links
 - **Repository:** https://github.com/NT9712/eaglercraft-262-workspace
-- **Docs & live client:** https://deploy-docs-p3pl65k7r-nixeltide-8187s-projects.vercel.app
+- **Docs & live client:** https://deploy-docs-psi.vercel.app/
   (open in a browser; the live client demo is under `/client/` — Note: Vercel
    free-tier Deployment Protection may prompt for login on first visit.)
 
