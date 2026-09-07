@@ -1,0 +1,40 @@
+name: Build Eaglercraft Browser Version
+
+on:
+  workflow_dispatch: # ボタンを押して手動でコンパイルを開始できるようにする設定
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Setup Java (JDK 17)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run compile script
+        run: |
+          # 実行権限を与えてスクリプトを走らせる
+          chmod +x compile.js.sh
+          ./compile.js.sh
+          
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: eaglercraft-browser-build
+          path: |
+            javascript/
+            stable-download/
